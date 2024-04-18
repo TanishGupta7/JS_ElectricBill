@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Bill</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>Electric Bill</h1>   
+        <form action="#">
+            <label>Units:</label>
+            <input type="number" name="unit" id="unit" value="" placeholder="Enter number of units" required autofocus> <br><br>
+            <label>Load:</label>
+            <input type="number" name="load" id="load" value="" placeholder="Enter number of load" required> <br><br>
+            <input type="checkbox" name="fan" id="fan" value="50"> Fan <br> <br>
+            <label>Quantity:</label>
+            <input type="number" name="fanvalue" id="fanvalue" value="" placeholder="Enter number of Fans"> <br><br>
+
+            <input type="checkbox" name="ac" id="ac" value="100"> AC <br> <br>
+            <label>Quantity:</label>
+            <input type="number" name="acvalue" id="acvalue" value="" placeholder="Enter number of AC"> <br><br>
+            <label>Select your category:</label> <br><br>
+            <input type="radio" name="category" id="dom"> Domestic-10%
+            <input type="radio" name="category" id="com"> Commercial-5%
+            <br> <br> <br><br>
+            <input type="button" value="Prepare Bill" onclick="dototal(unit,load,fan,ac,fanvalue,acvalue,dom,com);"> <br><br> <br>
+            <input type="number" name="unitscost" id="unitscost" value="" placeholder="Cost of units">
+            <input type="number" name="loadcost" id="loadcost" value="" placeholder="Cost of load">
+            <input type="number" name="fancost" id="fancost" value="" placeholder="Cost of Fan">
+            <input type="number" name="accost" id="accost" value="" placeholder="COst of AC"> <br><br> <br><br>
+
+            <label>Total Bill:</label> <input type="number" value="" id="totalbill" placeholder="Total Bill">
+            <label>Discount:</label> <input type="number" value="" id="discount" placeholder="Discount price">
+            <label>NET:</label> <input type="number" value="" id="net" placeholder="NET price">
+
+
+
+
+
+        </form>
+    </center>
+</body>
+
+</html>
